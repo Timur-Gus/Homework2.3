@@ -10,9 +10,7 @@ public class Truck extends EngineTransport {
     }
     @Override
     public void check() {
-        System.out.println("Обслуживаем " + getModelName());
-        transportUpdateTyre();
-        checkEngine();
+        super.check();
         checkTrailer();
     }
 }
