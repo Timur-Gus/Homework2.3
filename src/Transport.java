@@ -21,12 +21,13 @@ public class Transport implements Service {
                 System.out.println("Обслуживаем " + getModelName());
                 transportUpdateTyre();
             }
-
-    @Override
     public void transportUpdateTyre() {
         for (int i = 0; i < getWheelsCount(); i++) {
             updateTyre();
         }
+    }
+    public void updateTyre() {
+       System.out.println("Меняем покрышку");
     }
 
 }

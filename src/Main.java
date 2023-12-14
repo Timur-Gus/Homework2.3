@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class Main {
     public static void main(String[] args) {
-      Service[] transport = {
+      Transport[] transports = {
               new Car("car1", 4),
               new Car("car2", 4),
               new Truck("truck1", 6),
@@ -10,13 +10,8 @@ public class Main {
               new Bicycle("bicycle1", 2),
               new Bicycle("bicycle2", 2)
       };
-      checkAllTransports(transport);
+      ServiceStation.checkAllTransports(transports);
+    }
 
-    }
-  private static void checkAllTransports(Service[] transport) {
-    for (int i = 0; i < transport.length; i++) {
-      transport[i].check();
-    }
-  }
 
 }
